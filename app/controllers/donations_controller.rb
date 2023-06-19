@@ -6,13 +6,12 @@ class DonationsController < ApplicationController
     render :index 
   end 
 
-  # def create
-  #   @donation = Donation.create(
-  #     body: params[:body],
-  #     user_id: params[:user_id]
-  #   )
-  #   render :show
-  # end
+  def create
+    @donation = Donation.create(
+      body: params[:body],
+    )
+    render :show
+  end
 
   # def destroy
   #   @donation = Donation.find_by(id: params[:id])
